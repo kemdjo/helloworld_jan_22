@@ -17,6 +17,9 @@ pipeline {
         stage('Code Build') {
             steps {
                 sh 'mvn clean package'
+                sh 'date'
+                sh 'time'
+                sh 'cal'
             }
         }
         stage('Test') {
